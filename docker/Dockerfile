@@ -7,7 +7,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Install ClojureCLR
-RUN dotnet tool install --global --version 1.12.0-alpha7 Clojure.Main
+RUN dotnet tool install --global --version 1.12.0-alpha9 Clojure.Main
 
 # Babashka gives us tools.deps power
 RUN curl -sLO https://raw.githubusercontent.com/babashka/babashka/master/install \
